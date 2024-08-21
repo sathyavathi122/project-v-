@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+overflow-x:hidden;
+overflow-y: hidden;
+
+}
+.continer{
+    
+    background-size:cover;
+    height: 750px;
+    
+   
+   
+}
+.login{
+    height: 450px;
+    width: 320px;
+    position: relative;
+    background-color: rgb(255,255,255,0.1);
+    top: 150px;
+   left: 70%;
+    border-radius: 25px;
+    padding-top: 30px;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 10px;
+    position: fixed;
+
+    
+
+}
+input{
+    width: 95%;
+    height: 40px;
+    border-radius: 30px;
+    padding-left: 10px;
+   position: relative;
+    border: 2px solid rgb(255,255,255,0.2);
+}
+button{
+    width: 95%;
+    height: 40px;
+    border-radius: 30px;
+   background-color: rgba(255, 45, 69, 0.942);
+   border: 2px solid rgba(255, 45, 69, 0.942) ;
+    font-size: 12px;
+}
+label{
+    padding-left: 10px;
+    color: aliceblue;
+   
+}
+input:focus {
+    outline: none;
+  }
+#img{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+   position: relative;
+   right: 110px;
+   top: 5px;
+}
+#h1{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    position: relative;
+    bottom: 25px;
+}
+
+.login:hover{
+    font-size: 19px;
+}
+.button:hover{
+    background-color: rgb(0,255,0,0.6);
+     border: 1px solid rgb(0,255,0,0.6);
+     color: white;
+     font-size: 15px;
+    
+}
+.gogle,.facebook{
+    background-color: rgb(255,255,255);
+    border: 2px solid  rgb(255,255,255) ;
+   
+}
