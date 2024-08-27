@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+}
+.continer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+}
+.textbox{
+    height: 250px;
+    width: 450px;
+    border: 5px solid #fff;
+}
+.buttoncontiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    gap: 17%;
+  
+    
+}
+#chanse{
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+
+}
+.addtext{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: none;
+    
+}
+.addimg{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding-left: 37%;
+    padding-top: 10px;
+    display: none;
+}
+b{
+   position: relative;
+   right: 50%;
+}
+.post{
+    position: relative;
+    bottom: 50px;
+    left: 43%;
+    height: 50px;
+    width: 200px;
+   
+}
+.subpost{
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    display: none;
+}
+.posttxt{
+    position: relative;
+    top: 170px;
+    height: 70px;
+    width: 100%;
+
+}
+input{
+   width: 100%;
+   height: 100px;
+   position: relative;
+   right: 5px;
+   border: 5px solid #fff;
+   font-size: 25px;
+
+}
+input::placeholder {
+    position: relative;
+    bottom: 20px;
+    font-size: 26px;
+}
+.arrow{
+    position: relative;
+    bottom: 200px;
+    right: 460px;
+    border-radius: 50%;
+height: 40px;
+width: 40px;
+padding-left: 5px;
+padding-top: 5px;
+}
+.arrow:hover{
+    border: 2px solid white;
+    border-radius: 100%;
+}
