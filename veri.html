@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Code</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #56CCF2 50%, #2F80ED 50%);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 60px 20px 20px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .verification-header {
+            background-color: #2D9CDB;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 0;
+            border-radius: 10px 10px 0 0;
+            position: absolute;
+            top: -40px;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+        .verification-header:after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 10px;
+            background: #2D9CDB;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+        .instructions {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .code-inputs {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .code-inputs input {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            font-size: 18px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #2D9CDB;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #2388c8;
+        }
+        .resend {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #FF6F61;
+            cursor: pointer;
+        }
+        .keyboard {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .keyboard button {
+            width: 33.33%;
+            padding: 10px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .keyboard button:active {
+            background-color: #ddd;
+        }
+        .keyboard span {
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="verification-header">VERIFICATION</div>
+        <div class="instructions">Enter the code from the email we just sent you</div>
+        <div class="code-inputs">
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+        </div>
+        <button class="submit-btn">Submit</button>
+        <div class="resend">Resend</div>
+        <div class="keyboard">
+            <button>1<span>&nbsp;</span></button>
+            <button>2<span>ABC</span></button>
+            <button>3<span>DEF</span></button>
+            <button>4<span>GHI</span></button>
+            <button>5<span>JKL</span></button>
+            <button>6<span>MNO</span></button>
+            <button>7<span>PQRS</span></button>
+            <button>8<span>TUV</span></button>
+            <button>9<span>WXYZ</span></button>
+            <button>+*#<span>&nbsp;</span></button>
+            <button>0<span>&nbsp;</span></button>
+            <button><-<span>&nbsp;</span></button>
+        </div>
+    </div>
+</body>
+</html>
